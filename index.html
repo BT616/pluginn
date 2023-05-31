@@ -12,6 +12,7 @@
 
     <!-- CSS for slidesjs.com example -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
     <!-- End CSS for slidesjs.com example -->
 
     <!-- SlidesJS Optional: If you'd like to use this design -->
@@ -134,15 +135,31 @@
 
     <!-- SlidesJS Required: Start Slides -->
     <!-- The container is used to define the width of the slideshow -->
+    <div class="nav">
+        
+        <ul>
+            <li>
+                <a href="#1">Story 1</a>
+            </li>
+            <li>
+                <a href="#2">Story 2 </a>
+            </li>
+            <li>
+                <a href="#3">Story 2 </a>
+            </li>
+        </ul>
+    </div>
     <div class="container">
         <div id="slides">
-            <img src="1.jpg" alt="">
-            <img src="2.jpg" alt="" >
-            <img src="3.jpg" alt="">
+        
             <a href="#" class="slidesjs-next slidesjs-navigation">
                 <i class="fa fa-chevron-circle-left"></i></a>
             <a href="#" class="slidesjs-previous slidesjs-navigation">
                 <i class="fa fa-chevron-circle-right"></i></a>
+            <img id="1" src="1.jpg" alt="" >
+            <img id="2" src="2.jpg" alt="" >
+            <img id="3" src="3.jpg" alt="">
+          
         </div>
     </div>
     <!-- End SlidesJS Required: Start Slides -->
@@ -166,6 +183,7 @@
                 navigation: false
             });
         });
+        
     </script>
     <!-- End SlidesJS Required -->
 </body>
