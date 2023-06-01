@@ -17,6 +17,18 @@
 
     <!-- SlidesJS Optional: If you'd like to use this design -->
     <style>
+        * {
+
+            box-sizing: border-box;
+            font-family: 'Arial', Courier, monospace;
+
+        }
+
+        body {
+            padding: 0;
+            margin: 0;
+        }
+
         #slides {
             display: none
         }
@@ -50,6 +62,7 @@
             display: block;
             width: 13px;
             height: 0;
+            background-color: grey;
             padding-top: 13px;
             background-position: 0 0;
             float: left;
@@ -77,6 +90,22 @@
 
         .navbar {
             overflow: hidden
+        }
+
+        .header {
+            padding: 5%;
+            background-color: whitesmoke;
+            height: 100%;
+            
+            flex-wrap: wrap;
+            padding-left: 20%;
+
+        }
+
+        .header span {
+            text-align: left;
+            font-size: xx-large;
+
         }
     </style>
 
@@ -132,20 +161,23 @@
 </head>
 
 <body>
+    <header class="header">
+        <p>Quote Slideshow</p>
+    </header>
 
     <!-- SlidesJS Required: Start Slides -->
     <!-- The container is used to define the width of the slideshow -->
     <div class="container">
         <div id="slides">
-        
+
             <a href="#" class="slidesjs-next slidesjs-navigation">
                 <i class="fa fa-chevron-circle-left"></i></a>
             <a href="#" class="slidesjs-previous slidesjs-navigation">
                 <i class="fa fa-chevron-circle-right"></i></a>
-            <img id="1" src="1.jpg" alt="" >
-            <img id="2" src="2.jpg" alt="" >
+            <img id="1" src="1.jpg" alt="">
+            <img id="2" src="2.jpg" alt="">
             <img id="3" src="3.jpg" alt="">
-          
+
         </div>
     </div>
     <!-- End SlidesJS Required: Start Slides -->
@@ -169,7 +201,7 @@
                 navigation: false
             });
         });
-        
+
     </script>
     <!-- End SlidesJS Required -->
 </body>
